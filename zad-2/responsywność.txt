@@ -1,0 +1,1 @@
+responsywność strony polega na tym aby strona dostosywała się do rozdzielczości lub urządzenia z którego korzysta użytkownik aby było to wygodne i przyjemne wizualnie 
