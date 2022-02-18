@@ -1,0 +1,17 @@
+#content
+{
+    padding: 20px;
+}
+
+.row
+{
+    color: white;
+}
+
+.col, .col-3, .col-9, .col-sm, .col-lg-2, .col-md-auto
+{
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid black;
+    border-left: 1px solid black;
+}
