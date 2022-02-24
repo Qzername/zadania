@@ -1,7 +1,7 @@
 body
 {
     background-color: white;
-    color: rgb(51, 51,51);
+    color:  #333;
 }
 
 .shadow
@@ -21,7 +21,7 @@ h1,h2,h3,h4
 
 #smalltext
 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 nav
@@ -30,6 +30,12 @@ nav
 }
 
 /* Section with photo */
+
+#mePhoto
+{
+    border-radius: 200px;
+    border: 15px gray solid;
+}
 
 #photoSection
 {
@@ -79,22 +85,22 @@ nav
 }
 
 .fa-facebook {
-    background: rgb(62, 192, 150);
+    background: #3ec096;
     color: white;
 }
 
 .fa-github {
-    background: rgb(62, 192, 150);
+    background: #3ec096;
     color: white;
 }
 
 .fa-google {
-    background: rgb(62, 192, 150);
+    background: #3ec096;
     color: white;
 }
 
 .fa-linkedin {
-    background: rgb(62, 192, 150);
+    background: #3ec096;
     color: white;
 }
 
@@ -117,16 +123,16 @@ h5{
     margin-top: 10px;
 }
 
-.php {width: 70%; background-color: rgb(62, 192, 150);} /* Green */
-.js {width: 50%; background-color: rgb(62, 192, 150);} /* Blue */
-.mysql {width: 80%; background-color: rgb(62, 192, 150);} /* Red */
+.php {width: 70%; background-color: #3ec096;} /* Green */
+.js {width: 50%; background-color: #3ec096;} /* Blue */
+.mysql {width: 80%; background-color: #3ec096;} /* Red */
 .jquery {width: 60%; background-color: rgb(126, 134, 147);} /* Dark Grey */
 
 /* blog */
 
 #blogSection
 {
-    background-color: rgb(234, 242, 255);
+    background-color: #eaf2ff;
     min-height: 500px;
 }
 
