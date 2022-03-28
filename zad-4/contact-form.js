@@ -4,7 +4,7 @@ class TextValidation
     {
         if($("#name").val().split(' ').length < 2)
         {
-            alert("Musisz podać swoje pełne imie i nazwisko!")
+            this.ChangeText("Musisz podać swoje pełne imie i nazwisko!")
             return false
         }
 
@@ -17,7 +17,7 @@ class TextValidation
 
         if(!content.includes('@') || !content.includes('.'))
         {
-            alert("Błędny email!")
+            this.ChangeText("Błędny email!")
             return false
         }
 
@@ -26,11 +26,10 @@ class TextValidation
 
     ValidateNumber()
     {
-        let number = parseInt($("#telephone").val().replace("+",'')) || "NaN"
-
-        if(isNaN(number))
+        var numbers = /^[-+]?[0-9]+$/;
+        if(!$("#telephone").val().replace("+",'').match(numbers))
         {
-            alert("Zły numer telefonu!")
+            this.ChangeText("Zły numer telefonu!")
             return false
         }
 
@@ -41,7 +40,7 @@ class TextValidation
     {
         if($("#message").val() == "")
         {
-            alert("Wiadomość jest pusta!")
+            this.ChangeText("Wiadomość jest pusta!")
             return false
         }
 
@@ -53,10 +52,14 @@ class TextValidation
         if(!this.ValidateName() || !this.ValidateMail() || !this.ValidateNumber() || !this.ValidateMessage())
             return;
         
-        alert("OK")
+            this.ChangeText("Przesłano")
+    }
+
+    ChangeText(text)
+    {
+        $("#error").text(text)
     }
 }
-
 
 let textValidation = new TextValidation()
 
